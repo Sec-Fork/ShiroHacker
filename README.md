@@ -18,6 +18,20 @@
 
 可以使用配套测试环境：https://github.com/EmYiQing/ShiroEnv
 
+或者直接下载打包好的测试环境：https://github.com/EmYiQing/ShiroEnv/releases/download/1.0/shiro.jar
+
+（启动后访问：http://127.0.0.1:8080）
+
+命令：`java -jar ShiroHacker.jar -u [TARGET_URL] -p [YOUR_NEW_KEY]`
+
+## 注意
+
+1. 请提供16位长度的`Key`否则会影响到服务端正常的业务逻辑（不提供会使用默认的）
+2. Payload仅可用于较新版本的`SpringBoot`中（例如2.6.0）
+3. 使用该工具有可能会导致服务端业务逻辑出问题，真实环境**慎用**
+
+## 原理
+
 和普通`Shiro`工具一样，本工具会首先扫描`key`并输出
 
 然后会用`Shiro`原生反序列化链`CB1`构造`Payload`打过去
@@ -29,14 +43,6 @@
 - CookieRememberMeManager.decryptionCipherKey
 
 只修改第一处不会生效，需要获取`Spring`的`Context`拿到`CookieRememberMeManager`的`Bean`修改后两处
-
-命令：`java -jar ShiroHacker.jar -u [TARGET_URL] -p [YOUR_NEW_KEY]`
-
-## 注意
-
-1. 请提供16位长度的`Key`否则会影响到服务端正常的业务逻辑
-2. Payload仅可用于较新版本的`SpringBoot`中（例如2.6.0）
-3. 使用该工具有可能会导致服务端业务逻辑出问题，真实环境**慎用**
 
 ## 感谢
 
