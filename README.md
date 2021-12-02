@@ -22,7 +22,7 @@
 
 （启动后访问：http://127.0.0.1:8080）
 
-命令：`java -jar ShiroHacker.jar -u [TARGET_URL] -p [YOUR_NEW_KEY]`
+命令：`java -jar ShiroHacker.jar -u [TARGET_URL] -k [YOUR_NEW_KEY]`
 
 ## 注意
 
