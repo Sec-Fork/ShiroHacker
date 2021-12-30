@@ -23,11 +23,13 @@
 
 （该工具只针对于`SpringBoot/SpringMVC`配合`Shiro`的情况，这也是最广泛的情况）
 
+该工具主要用于安全研究和学习，如果需要偏向实战的工具参考`SummerSec`师傅的项目 [ShiroAttack2](https://github.com/SummerSec/ShiroAttack2)
+
 ## 使用
 
 ![](img/01.png)
 
-可以使用配套测试环境：https://github.com/EmYiQing/ShiroEnv
+使用配套测试环境：https://github.com/EmYiQing/ShiroEnv
 
 或者直接下载打包好的测试环境：https://github.com/EmYiQing/ShiroEnv/releases/download/1.0/shiro.jar
 
